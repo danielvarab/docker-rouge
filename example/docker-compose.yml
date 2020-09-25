@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+    python:
+        build : .
+        environment:
+            - SYSTEM=dev.jsonl.gz
+            - REFERENCE=dev.jsonl.gz
+            - SCORE=results.jsonl
+            #- GZIP=1
+        volumes:
+            - ../../data/release:/data
+            #- ./tmp:/data
+
