@@ -1,0 +1,1 @@
+docker build . -t danielvarab/rouge:0.1
